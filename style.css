@@ -52,6 +52,18 @@ header #navbar .nav-list .nav-item a:hover{
     transition: color 0.3s;
 }
 
+header #navbar .menu{
+    display: none;
+}
+
+@media (max-width:740px){
+    header #navbar .menu{
+    display: block;
+}
+    header #navbar .nav-list{
+        display: none;
+    }
+}
 /*section BANNER*/
 
 main{
@@ -96,6 +108,17 @@ main #banner{
     max-width: 300px;
 }
 
+@media (max-width: 920px){
+    main #banner{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+}
+main #bannercontent{
+    text-align: center;
+}
+}
+
 /*SECTION POSTS*/
 
 section#posts{
@@ -107,4 +130,52 @@ section#posts{
     max-width: 1200px;
     padding: 0 2rem;
     margin: 0 auto;
+}
+
+.postsheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+
+#posts .postcontent .postsheader .poststitle{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#posts .postcontent .postsheader .viewalllink{
+    text-decoration: none;
+    color:#00a8cc;
+}
+
+#posts .postcontent .postcards{
+    display: flex;
+    gap: 20px;
+}
+
+#posts .postcontent .postcards .card{
+    background-color: #fff;
+    padding: 24px;
+}
+
+#posts .postcontent .postcards .card h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 38px;
+}
+
+#posts .postcontent .postcards .card span{
+    font-size: 18px;
+    margin-bottom: 24px;
+    display: block;
+}
+
+#posts .postcontent .postcards .card p{
+    margin-bottom: 1.3rem;   
+}
+@media (max-width: 740px){
+    #posts .postcontent .postcards{
+        flex-direction: column;
+    }
 }
