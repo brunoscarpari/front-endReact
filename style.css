@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, button, input, select, textarea{
+    font-family: "Oswald", sans-serif; 
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+header{
+    background-color: #fff;
+}
+
+header #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+header #navbar .nav-brand{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: #000016;
+}
+
+header #navbar .nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: none;
+}
+
+header #navbar .nav-list .nav-item a{
+    text-decoration: none;
+    color: #000016;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+header #navbar .nav-list .nav-item a:hover{
+    color: #0000ac;
+    transition: color 0.3s;
+}
+
+/*section BANNER*/
+
+main{
+    margin-top: 6rem;
+}
+main #banner{
+    display: flex;
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.bannertitle{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+.bannersubtitle{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.bannerbtn{
+    color: #fff;
+    background-color: #00a8cc;
+    border: none;
+    padding: 8px 24px;
+    font-size: 17px;
+    font-weight: 350;
+    border-radius: 3px;
+}
+
+.bannerimage{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 300px;
+}
+
+/*SECTION POSTS*/
+
+section#posts{
+    margin-top: 80px;
+    background-color: #edf7fa;
+    
+}
+#posts .postcontent{
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
